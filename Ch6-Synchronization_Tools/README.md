@@ -1,9 +1,11 @@
-# Compile methods
+# Ch6 : Synchronization Tools
+
+## Compile methods
 
 - Environments : Mac OS Monterey 12.3.1 (Arm64)
 - GCC : Apple clang version 13.1.6
 
-## How to compile OpenMP
+### How to compile OpenMP
 
 - Install llvm, libomp
 ```
@@ -23,8 +25,11 @@ export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 /opt/homebrew/opt/llvm/bin/clang $LDFLAGS -Xpreprocessor -fopenmp -lomp [filename].c
 ```
 
-## How to compile POSIX Threads (PThread)
+### How to compile POSIX Threads (PThread)
 - Compile
 ```
 gcc [filename].c -lpthread
 ```
+
+## Algorithm to solve `bounded_nosync.c` problem
+<p align="center"><img src="./bounded_waiting_mutex_with_CAS.jpg" /></p>
