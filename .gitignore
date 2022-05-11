@@ -1,2 +1,7 @@
+# for ignore unix file
+*
+!*.*
+!*/
+
 *.DS_STORE
 *.out
